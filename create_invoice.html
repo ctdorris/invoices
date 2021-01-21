@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Invoice</title>
+</head>
+<body>
+
+    <h1>Create New Invoice</h1>
+    
+    <form action="/new_invoice">
+        <p>
+            <label for="cust_id">Customer ID:</label>
+            <input type="text" id="cust_id">
+        </p>
+        <p>
+            <label for="cust_name">Customer Name:</label>
+            <input type="text" id="cust_name">
+        </p>
+        <h2>Customer Address:</h2>
+        <p>
+            <label for="cust_street">Street:</label>
+            <input type="text" id="cust_street">
+        </p>
+        <p>
+            <label for="cust_city">City:</label>
+            <input type="text" id="cust_city">
+        </p>
+        <p>
+            <label for="cust_state">State:</label>
+            <input type="text" id="cust_state">
+        </p>
+        <p>
+            <label for="cust_zip">Zip Code:</label>
+            <input type="text" id="cust_zip">
+        </p>
+        <h2>Invoice Items:</h2>
+        <p>
+            <label for="item_desc">Item Description:</label>
+            <input type="text" id="item_desc">
+        </p>
+        <p>
+            <label for="serv_per">Service Dates:</label>
+            <input type="text" id="serv_per">
+        </p><p>
+            <label for="item_amt">Item Amount:</label>
+            <input type="text" id="item_amt">
+        </p>
+        <button>Create Invoice</button>
+    </form>
+
+</body>
+</html>
