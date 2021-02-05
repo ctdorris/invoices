@@ -9,47 +9,50 @@
 </head>
 <body>
 
-<div class="container-fluid margin-bottom:1">
-    <h1>Create New Invoice</h1>
+<div class="container">
+    <h1 class="display-4">Create New Invoice</h1>
     
     <form action="/new_invoice">
-        <p class="mb-3">
-            <label for="cust_id" class="form-label">Customer ID:</label>
-            <input type="text" class="form-control" id="cust_id">
-        </p>
-        <p class="mb-3">
-            <label for="cust_name" class="form-label">Customer Name:</label>
-            <input type="text" class="form-control" id="cust_name">
-        </p>
-        <h2>Customer Address:</h2>
-        <p class="mb-3">
+        <div class="row g-3">
+            <div class="mb-3 col-md-6">
+                <label for="cust_id" class="form-label">Customer ID:</label>
+                <input type="text" class="form-control" id="cust_id">
+            </div>
+            <div class="mb-3 col-md-6">
+                <label for="cust_name" class="form-label">Customer Name:</label>
+                <input type="text" class="form-control" id="cust_name">
+            </div>
+        </div>
+        <h2 class="display-6">Customer Address:</h2>
+        <div class="mb-3">
             <label for="cust_street" class="form-label">Street:</label>
             <input type="text" class="form-control" id="cust_street">
-        </p>
-        <p class="mb-3">
+        </div>
+        <div class="mb-3">
             <label for="cust_city" class="form-label">City:</label>
             <input type="text" class="form-control" id="cust_city">
-        </p>
-        <p class="mb-3">
+        </div>
+        <div class="mb-3">
             <label for="cust_state" class="form-label">State:</label>
             <input type="text" class="form-control" id="cust_state">
-        </p>
-        <p class="mb-3">
+        </div>
+        <div class="mb-3">
             <label for="cust_zip" class="form-label">Zip Code:</label>
             <input type="text" class="form-control" id="cust_zip">
-        </p>
-        <h2>Invoice Items:</h2>
-        <p class="mb-3">
+        </div>
+        <h2 class="display-1">Invoice Items:</h2>
+        <div class="mb-3">
             <label for="item_desc" class="form-label">Item Description:</label>
             <input type="text" class="form-control" id="item_desc">
-        </p>
-        <p class="mb-3">
+        </div>
+        <div class="mb-3">
             <label for="serv_per" class="form-label">Service Dates:</label>
             <input type="text" class="form-control" id="serv_per">
-        </p><p class="mb-3">
+        </div>
+        <div class="mb-3">
             <label for="item_amt" class="form-label">Item Amount:</label>
             <input type="text" class="form-control" id="item_amt">
-        </p>
+        </div>
         <button class="btn btn-primary">Create Invoice</button>
         <button class="btn btn-danger">Reset Form</button>
     </form>
